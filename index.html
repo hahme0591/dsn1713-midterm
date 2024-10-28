@@ -4,199 +4,275 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Midterm Assignment</title>
-    <!-- Include Bootstrap JS cdn link -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
-    <header>
-      
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg  py-1" style="background-color: #2e483a;">
+        <div class="container-lg">
+          <a class="navbar-brand" href="#">
+            <img src="images/daily-dish-logo.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"> 
+            <span class="text-white">Daily Dish</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Menu Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Our Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+    
 
 
     <main>
 
-      <section id="hero">
-        <div> 
-          <div>
-            <div>
-              <h1>Healthy, Delicious Meals Delivered to Your Door – Ready in Minutes!</h1>
-              <p>With Daily Dish, you can enjoy chef-crafted, wholesome meals without the hassle of meal prep, grocery shopping, or cleanup.</p>
-              <button>Get Started Today and Save Time!</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="hero" class="d-flex align-items-start justify-content-center" 
+         style="background-image: url(images/hero-bg-img.png); 
+                background-size: cover; 
+                background-position: center; 
+                height: 100vh; /* Full height on desktop */
+                position: relative;">
 
-      <section>
+            <div class="text-center" style="position: relative; z-index: 2; color: #000; margin-top: 100px;"> 
+              <h1 style="font-family: 'Merriweather', serif;font-size: 3rem; margin-bottom: 1rem;">Healthy, Delicious Meals Delivered to Your Door – Ready in Minutes!</h1>
+              <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">
+                With Daily Dish, you can enjoy chef-crafted, wholesome meals without the hassle of meal prep, grocery shopping, or cleanup.
+              </p>
+
+        <button class="btn" 
+                style="background-color: #2e483a; 
+                       color: #fff; 
+                       padding: 10px 20px; 
+                       border-radius: 5px; 
+                       font-size: 1rem; 
+                       cursor: pointer;">
+            Get Started Today and Save Time!
+        </button>
+    </div>
+
+       <div style="content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;(255, 255, 255, 0.5)">
+       </div>
+</section>
+
+
+
+<section class="how-it-works">
+  <div class="container text-center" style="margin-top: 50px; margin-bottom: 50px;"> 
+    <h2 style="font-family: 'Merriweather', serif;">How it Works</h2>
+    <p style="font-size: 1rem; margin-bottom: 1.5rem;">
+      Say goodbye to meal planning stress! With Daily Dish, you’ll enjoy chef-crafted meals made from fresh, natural ingredients, delivered right to your door—ready to cook in minutes.
+    </p>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
         <div>
-          <h2>How it Works</h2>
-          <p>Say goodbye to meal planning stress! With Daily Dish, you’ll enjoy chef-crafted meals made from fresh, natural ingredients, delivered right to your door—ready to cook in minutes.</p>
-          <div>
-            <div>
-              <div>
-                <img src="images/meal.svg" alt="" width="100" height="auto">
-              </div>
-              <h3>Choose Your Menu</h3>
-              <p>Explore a wide variety of delicious meal options, tailored to your dietary preferences—whether you're vegan, low-carb, or just looking for wholesome comfort food.</p>
-            </div>
-            <div>
-              <div>
-                <img src="images/vegetables.svg" alt="" width="100" height="auto">
-              </div>
-              <h3>Fresh Ingredients Delivered</h3>
-              <p>We source the freshest, highest-quality ingredients and deliver them in perfectly portioned kits. No waste, no hassle.</p>
-            </div>
-            <div>
-              <div>
-                <img src="images/plate-fork-spoon.svg" alt="" width="100" height="auto">
-              </div>
-              <h3>Cook & Enjoy</h3>
-              <p>Our easy-to-follow recipes mean you’ll have a mouthwatering, home-cooked meal ready in under 30 minutes—no kitchen skills required!</p>
-            </div>
-          </div>
-          <button>Pick Your Plan</button>
+          <img src="images/meal.svg" alt="" width="100" height="auto">
+          <h3>Choose Your Menu</h3>
+          <p>Explore a wide variety of delicious meal options, tailored to your dietary preferences—whether you're vegan, low-carb, or just looking for wholesome comfort food.</p>
         </div>
-      </section>
-      
-      <section>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
         <div>
-          <h2>The Smarter Way to Eat Healthy</h2>
-          <div>
-            <div>
-              <img class="" src="images/family-eating.png" alt="Family enjoying dinner">
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <h3>Save Time & Stress</h3>
-                  <p>Skip the grocery store and meal prep. Everything you need is delivered—so you can focus on living, not planning.</p>
-                </li>
-                <li>
-                  <h3>Balanced & Nutritious</h3>
-                  <p>Each recipe is carefully crafted by nutrition experts and chefs to provide well-balanced, nourishing meals.</p>
-                </li>
-                <li>
-                  <h3>Customize Your Box</h3>
-                  <p>Whether you’re cooking for yourself or a family, our plans are flexible and adjustable to meet your unique needs.</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
+          <img src="images/vegetables.svg" alt="" width="100" height="auto">
+          <h3>Fresh Ingredients Delivered</h3>
+          <p>We source the freshest, highest-quality ingredients and deliver them in perfectly portioned kits. No waste, no hassle.</p>
         </div>
-      </section>
-
-
-      <section>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
         <div>
-          <div>
-            <h2>What Our Customers Are Saying</h2>
-
-            <div>
-              <div>
-                <figure>
-                  <img src="images/sarah.jpg" alt="Profile picture of Sarah" width="100" height="100">
-                  <blockquote>
-                    <p>"Daily Dish has completely changed how I eat during the week. The meals are so easy, and the flavors are incredible!"</p>
-                  </blockquote>
-                  <figcaption>
-                    Sarah, Busy Professional
-                  </figcaption>
-                </figure>
-              </div>
-              <div>
-                <figure>
-                  <img src="images/tom.jpg" alt="Profile picture of Tom" width="100" height="100">
-                  <blockquote>
-                    <p>"I love that I can adjust the menu to fit my family’s preferences. Daily Dish makes healthy eating simple for all of us."</p>
-                  </blockquote>
-                  <figcaption>
-                    Tom, Father of Two
-                  </figcaption>
-                </figure>
-              </div>
-              <div>
-                <figure>
-                  <img src="images/julia.jpg" alt="Profile picture of Julia" width="100" height="100">
-                  <blockquote>
-                    <p>"As someone who’s new to cooking, I was nervous at first but Daily Dish makes it so easy."</p>
-                  </blockquote>
-                  <figcaption>
-                    Julia, Novice Cook
-                  </figcaption>
-                </figure>
-              </div>
-              
-            </div>
-
-          </div>
+          <img src="images/plate-fork-spoon.svg" alt="" width="100" height="auto">
+          <h3>Cook & Enjoy</h3>
+          <p>Our easy-to-follow recipes mean you’ll have a mouthwatering, home-cooked meal ready in under 30 minutes—no kitchen skills required!</p>
         </div>
-      </section>
+      </div>
+    </div>
+    <button class="btn" style="background-color: #2e483a; color: #fff; padding: 10px 20px; border-radius: 5px; font-size: 1rem; cursor: pointer;"> 
+      Pick Your Plan
+    </button>
+    <hr style="margin: 40px 0; border: 1px solid #000000;"> 
+  </div>
+</section>
 
 
-      <section>
-        <div>
-          <div>
-            <h2>Questions? We Have Answers</h2>
 
-            <!-- Include accordian component that best matches what is included in the provided screenshot.
+<section style="padding: 40px 0;"> 
+  <div class="container">
+    <h2 style="text-align: center; font-family: 'Merriweather', serif; margin-bottom: 30px;">The Smarter Way to Eat Healthy</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-1 text-center mb-3 mb-md-0">
+        <img src="images/family-eating.png" alt="Family enjoying dinner" class="img-fluid" style="max-width: 100%; height: auto; margin-bottom: 20px;"> 
+      </div>
+      <div class="col-md-6 order-md-2">
+        <ul class="list-unstyled" style="text-align: left;">
+          <li style="margin-bottom: 20px; border-bottom: 1px solid #ccedcc; padding-bottom: 10px;">
+            <h3 style="font-family: 'Merriweather', serif; font-size: 1.5rem;">Save Time & Stress</h3>
+            <p style="font-size: 0.8rem;">Skip the grocery store and meal prep. Everything you need is delivered—so you can focus on living, not planning.</p>
+          </li>
+          <li style="margin-bottom: 20px; border-bottom: 1px solid #ccedcc; padding-bottom: 10px;">
+            <h3 style="font-family: 'Merriweather', serif; font-size: 1.5rem;">Balanced & Nutritious</h3>
+            <p style="font-size: 0.8rem;">Each recipe is carefully crafted by nutrition experts and chefs to provide well-balanced, nourishing meals.</p>
+          </li>
+          <li style="margin-bottom: 20px; border-bottom: 1px solid #ccedcc; padding-bottom: 10px;">
+            <h3 style="font-family: 'Merriweather', serif; font-size: 1.5rem;">Customize Your Box</h3>
+            <p style="font-size: 0.8rem;">Whether you’re cooking for yourself or a family, our plans are flexible and adjustable to meet your unique needs.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-            Text to include:
-
-            Can I pause or cancel my subscription?
-
-            Absolutely! You can pause, modify, or cancel your subscription at any time through your account dashboard.
+        
 
 
-            How long do the meals last?
+<section style="background-color: #2e483a; color: #f6f3ed; padding: 80px;"> 
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 30px; font-family: 'Merriweather', serif;">What Our Customers Are Saying</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <figure class="text-center">
+          <img src="images/sarah.jpg" alt="Profile picture of Sarah" width="100" height="100" class="rounded-circle"> 
+          <blockquote class="blockquote">
+            <p style="font-size: 0.85rem;">"Daily Dish has completely changed how I eat during the week. The meals are so easy, and the flavors are incredible!"</p>
+          </blockquote>
+          <figcaption style="font-size: 0.75rem; margin-top: 5px;">Sarah, Busy Professional</figcaption> 
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="text-center">
+          <img src="images/tom.jpg" alt="Profile picture of Tom" width="100" height="100" class="rounded-circle"> 
+          <blockquote class="blockquote">
+            <p style="font-size: 0.85rem;">"I love that I can adjust the menu to fit my family’s preferences. Daily Dish makes healthy eating simple for all of us."</p>
+          </blockquote>
+          <figcaption style="font-size: 0.75rem; margin-top: 5px;">Tom, Father of Two</figcaption> 
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="text-center">
+          <img src="images/julia.jpg" alt="Profile picture of Julia" width="100" height="100" class="rounded-circle"> 
+          <blockquote class="blockquote">
+            <p style="font-size: 0.85rem;">"As someone who’s new to cooking, I was nervous at first but Daily Dish makes it so easy."</p>
+          </blockquote>
+          <figcaption style="font-size: 0.75rem; margin-top: 5px;">Julia, Novice Cook</figcaption> 
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
 
-            Our meals stay fresh in your fridge for up to 5 days. Each meal comes with a ‘best by’ date for optimal freshness.
 
 
+
+<section class="faq" style="margin-top: 80px; margin-bottom: 80px;"> 
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 20px; font-family: 'Merriweather', serif;">Questions? We Have Answers</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-family: 'Merriweather', serif;">
+            Can I pause or cancel my subscribtion?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Answer 1</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"style="font-family: 'Merriweather', serif;">
+            How long do the meal last?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Answer 2</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"style="font-family: 'Merriweather', serif;">
             Do you offer meals for specific diets?
-
-            Yes! We offer meals for a variety of diets, including vegetarian, keto, paleo, and gluten-free. -->
-
-              
-          </div>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Answer 3</div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-      <section id="cta">
-        <div>
-          <div>
-            <h2>Join Thousands of Time-Savers – Start Eating Better Today!</h2>
-            <button>Sign Up and Get 30% Off Your First Week</button>
-          </div>
-        </div>
-      </section>
+
+<section id="cta" style="position: relative; padding: 60px 0; min-height: 400px; overflow: hidden;">
+  <div style="background-image: url(images/cta-bg.png); background-size: cover; background-repeat: no-repeat; background-position: center; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1;"></div>
+  <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 2;"></div> 
+  
+  <div class="container text-center" style="color: #f6f3ed; position: relative; z-index: 3;"> 
+    <h2 style="font-family: 'Merriweather', serif; margin-bottom: 20px;">Join Thousands of Time-Savers – Start Eating Better Today!</h2>
+    <button class="btn" style="background-color: #2e483a; color: #f6f3ed; border: none; padding: 8px 16px; font-size: 14px;">Sign Up and Get 30% Off Your First Week</button>
+  </div>
+</section>
+
+
+
+
+
+
+
+
 
     </main>
 
 
     
-    <footer>
-      <div>
-        <div>
-          <div>
+    <footer style="background-color: #2e483a; color: #f6f3ed;" class="py-4">
+      <div class="container-lg">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
             <a href="/">
               <img src="images/daily-dish-logo.svg" alt="Logo" width="35" height="auto">
             </a>
-            <span>&copy; 2024 Company, Inc</span>
+            <span class="ms-2">&copy; 2024 Company, Inc</span>
           </div>
-      
-          <ul>
-            <li><a href="#"><img src="images/instagram.svg" alt="Instagram logo" width="35" height="auto"></a></li>
-            <li><a href="#"><img src="images/facebook.svg" alt="Facebook logo" width="35" height="auto"></a></li>
+          <ul class="list-unstyled d-flex m-0">
+            <li class="me-3">
+              <a href="#">
+                <img src="images/instagram.svg" alt="Instagram logo" width="35" height="auto">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/facebook.svg" alt="Facebook logo" width="35" height="auto">
+              </a>
+            </li>
           </ul>
         </div>    
       </div>
     </footer>
     
     
-    <!-- Include Bootstrap JS cdn link -->
+    
+    <!-- Bootstrap JS (Bootstrap 5) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-xxxx" crossorigin="anonymous"></script>
+
   </body>
 </html>

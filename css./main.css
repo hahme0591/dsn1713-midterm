@@ -4,11 +4,40 @@
 
 
 
-
-
-.navbar-brand {
-  color: #F6F3ED;
+:root {
+  --body-bg: #F6F3ED;
+  --primary-color: rgb(46, 72, 58); 
+  --primary-rgb: rgb(46, 72, 58);
+  --light-color: rgb(246, 243, 237);
 }
+
+body {
+  background-color: var(rgb(246, 243, 237));
+}
+
+.navbar {
+  background-color: var(rgb(46, 72, 58));
+}
+
+.nav-link {
+  color: rgb(211, 211, 211); 
+}
+
+.nav-link.active,
+.nav-link.text-white {
+  color: rgb(255, 255, 255); 
+}
+
+.navbar-toggler {
+  background-color: transparent; 
+  border: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-color: rgb(211, 211, 211);
+}
+
+
 
 body {
   font-family: "Sarala", sans-serif;
@@ -51,3 +80,8 @@ section:not(#hero):not(#cta){
     padding: 100px 0;
   }
 }
+
+footer {
+  background-color: var(rgb(46, 72, 58));
+}
+
